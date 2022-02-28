@@ -1,0 +1,118 @@
+body {
+    font-size: 16px;
+    font-family: 'OpenSans', sans-serif;
+    padding: 0;
+    background-color: #000000;
+}
+
+.thirdeye-Accordion {
+    font-size: 1rem;
+    width: 30vw;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.thirdeye-Accordion-body {
+    background: #fff;
+    color: #353535;
+    display: none;
+}
+
+.thirdeye-Accordion-header {
+    padding: 16px 42px 16px 16px;
+    background: #3F51B5;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all.3s;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.thirdeye-Accordion-header:hover {
+    background: #2D3D99;
+    position: relative;
+    z-index: 5;
+}
+
+.thirdeye-Accordion-item {
+    border-bottom: 1px solid#3a4ba4;
+}
+
+.thirdeye-Accordion .thirdeye-Accordion-item:last-child {
+    border-bottom: 0;
+}
+
+.thirdeye-Accordion-item .thirdeye-Accordion .thirdeye-Accordion-item {
+    border-bottom: 1px solid #dfdddd;
+}
+
+.thirdeye-Accordion-contents {
+    padding: 16px;
+    font-size: 12px;
+}
+
+.thirdeye-Accordion-body.show .thirdeye-Accordion-contents {
+    display: block;
+}
+
+.thirdeye-Accordion-item .thirdeye-Accordion-item .thirdeye-Accordion-header {
+    background: #f1f1f1;
+    color: #353535;
+}
+
+.thirdeye-Accordion-item .accordion-arrow {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    display: block;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thirdeye-Accordion-item .accordion-arrow .icon {
+    width: 16px;
+    height: 16px;
+    display: block;
+    transition: all 0.2s ease-in-out;
+}
+
+.thirdeye-Accordion-item .accordion-arrow .icon svg,
+.thirdeye-Accordion-item .accordion-arrow .icon img {
+    width: 15px;
+    height: 15px;
+}
+
+.thirdeye-Accordion-item .accordion-arrow .icon i {
+    font-size: 15px;
+}
+
+.thirdeye-Accordion-item .accordion-arrow .accordion-active {
+    display: block;
+}
+
+.thirdeye-Accordion-item .accordion-arrow.add .accordion-active {
+    display: block;
+}
+
+.thirdeye-Accordion-item .accordion-arrow.add .accordion-deactive {
+    display: none;
+}
+
+.thirdeye-Accordion-item.active>.thirdeye-Accordion-header>.accordion-arrow.add .accordion-active {
+    display: none;
+}
+
+.thirdeye-Accordion-item.active>.thirdeye-Accordion-header>.accordion-arrow.add .accordion-deactive {
+    display: block;
+}
+
+.thirdeye-Accordion-item.active>.thirdeye-Accordion-header>.accordion-arrow .accordion-active {
+    transform: rotate(-180deg);
+}
